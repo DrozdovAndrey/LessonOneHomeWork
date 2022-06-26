@@ -9,12 +9,32 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите целое число: "); // все что мы считываем из терминала - это строка, поэтому конвертируем
-            int number = Convert.ToInt32(Console.ReadLine());  // команда Convert конвертирует во что то, ToInt - во что, в целочисленные значения, 32 - 32 битная система исчисления
-            int square = number * number;
-            // если не хотим вводить переменную делаем так
-            number*= number; // для начала ставим математический знак потом равно
-            Console.WriteLine($"Квадрат числа: {square}, {number}"); // можно так сделать Console.WriteLine("Квадрат числа: ")
-        }
+            Console.Clear();
+            Console.WriteLine("Введите число a: ");
+            double number1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите число b: ");
+            double number2 = Convert.ToDouble(Console.ReadLine()); 
+            double max; 
+            double min; 
+            if (number1 == number2) 
+            {
+                 Console.WriteLine("Эти числа равны!");
+            } 
+            else
+            {
+                if (number1 > number2)
+                {
+                    max = number1;
+                    min = number2;
+
+                }
+                else
+                {
+                    max = number2;
+                    min = number1;
+                }
+                Console.WriteLine($"Большее число: {max}, Меньшее число: {min} ");
+            }
+        }  
     }
 }
