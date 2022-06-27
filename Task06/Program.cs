@@ -12,7 +12,7 @@
             Console.Clear();
             Console.WriteLine("Введите целое число: ");
             int number = Convert.ToInt32(Console.ReadLine());
-//             int even;
+//             int even;                                      // добвил лишние переменные, можно обойтись без них
 //             int odd;
             if (number % 2 == 0)
                 {
