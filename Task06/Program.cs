@@ -12,17 +12,17 @@
             Console.Clear();
             Console.WriteLine("Введите целое число: ");
             int number = Convert.ToInt32(Console.ReadLine());
-            int even;
-            int odd;
+//             int even;
+//             int odd;
             if (number % 2 == 0)
                 {
-                    even = number;
-                    Console.WriteLine($"Введенное число - {even} - четное");
+//                     even = number;
+                    Console.WriteLine($"Введенное число - {number} - четное");
                 }
             else
                 {
-                    odd = number;
-                    Console.WriteLine($"Введенное число - {odd} - нечетное");
+//                     odd = number;
+                    Console.WriteLine($"Введенное число - {number} - нечетное");
                 }    
                 
         }  
