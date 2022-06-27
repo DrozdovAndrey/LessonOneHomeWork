@@ -20,7 +20,7 @@
             {
                  Console.WriteLine("Эти числа равны!");
             } 
-            else
+            else // этот else можно не применять
             {
                 if (number1 > number2)
                 {
